@@ -1,0 +1,62 @@
+name: Build App
+on:
+  workflow_dispatch:
+    inputs:
+      os:
+        type: choice
+        description: OS to build on. Ubuntu is faster!
+        options:
+          - macos-latest
+          - ubuntu-latest
+      should_submit:
+        type: boolean
+        description: Whether to perform the deployment step.
+        required: true
+        default: false
+jobs:
+  build:
+    name: ⌛ Building
+    runs-on: ${{ github.event.inputs.os }}
+    strategy:
+      matrix:
+        node: [18.x]
+    steps:
+      - name: 🏗 Setup repo
+        uses: actions/checkout@v4
+      - name: 🏗 Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node }}
+          cache: yarn
+      - name: 📦 Install dependencies
+        run: yarn install
+      - name: 📋 Format project
+        run: yarn format
+      - name: 🔗 Lint project
+        run: yarn lint:fix
+      - name: 🧪 Test project
+        run: yarn test
+      - name: 👷 Build app
+        run: yarn build
+      - name: 🗳️ Upload Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: dist
+          path: dist
+
+  deploy:
+    name: ⌛ Deploying
+    needs: build
+    runs-on: ${{ github.event.inputs.os }}
+    if: ${{ github.event.inputs.should_submit }} && github.ref == 'refs/heads/master'
+    steps:
+      - name: 📥 Download Artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: dist
+          path: dist
+      - name: 📃 Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: dist

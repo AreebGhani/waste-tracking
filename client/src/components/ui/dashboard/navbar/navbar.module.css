@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 20px;
+  border-radius: 20px;
+  background-color: rgb(var(--background-soft-rgb));
+}
+
+.title {
+  color: rgb(var(--text-soft-rgb));
+  align-items: center;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.input {
+}
+
+.search {
+}
+
+.icons {
+}

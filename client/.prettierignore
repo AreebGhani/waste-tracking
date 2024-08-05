@@ -1,0 +1,17 @@
+node_modules/**
+package.json
+yarn.lock
+src/assets/**
+.vscode
+.prettirrc
+.eslintrc
+tsconfig.json
+tsconfig.node.json
+*.config.json
+.github
+.husky
+.next
+*.md
+*yml
+Dockerfile
+Makefile

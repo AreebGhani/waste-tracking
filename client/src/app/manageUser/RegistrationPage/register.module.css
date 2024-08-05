@@ -1,0 +1,90 @@
+/* styles/register.module.css */
+.register-page {
+  text-align: center;
+  padding: 20px;
+}
+
+.header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+.header h1 {
+  cursor: pointer;
+}
+
+.header p {
+  margin: 0;
+}
+
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-heading {
+  font-size: 2.5rem;
+  font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', Helvetica, Arial, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.form-check-inline {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.alert {
+  margin-bottom: 20px;
+}
+.register {
+  width: 35%;
+  margin-right: auto !important;
+  margin-left: auto !important;
+  border: 1px solid #e2e8f0;
+  padding: 40px;
+  box-shadow:
+    0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  height: 100% !important;
+}
+
+.register_box {
+}
+
+/* styles/register.module.css */
+.form-check-inline .form-check {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.form-check-label {
+  /* margin-left: 5px; */
+}
+
+@media screen and (max-device-width: 768px) and (max-device-width: 576px) {
+  .register {
+    width: 80% !important;
+    height: 100% !important;
+  }
+}
+
+@media screen and (max-device-width: 575px) {
+  .register {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}

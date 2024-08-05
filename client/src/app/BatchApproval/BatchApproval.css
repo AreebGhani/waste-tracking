@@ -1,0 +1,181 @@
+@import '/theme/cwMaster.css';
+@import '/theme/DPWWasteTracking.css';
+@import '/js/DataTables-1.9.4/media/css/demo_table.css';
+@import '/js/DataTables-1.9.4/media/css/jquery.dataTables_themeroller.css';
+@import '/js/jquery-ui/development-bundle/themes/ui-lightness/jquery.ui.all.css';
+
+.greySolidTable {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  background-color: #f3f3f3;
+  border-color: #66ccff;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.table-layout {
+  border: 0;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-layout td {
+  padding: 0;
+}
+
+.spacer {
+  width: 2%;
+}
+
+.image-cell {
+  vertical-align: center;
+  width: 6%;
+}
+
+.image {
+  border: none;
+}
+
+.header-text {
+  width: 60%;
+}
+
+.bannerTitle {
+  font-size: 17pt;
+}
+
+.bannerSubTitle {
+  font-size: 14pt;
+}
+
+.email-cell {
+  text-align: right;
+  vertical-align: bottom;
+  width: 26%;
+}
+
+.request-image {
+  border: 0;
+}
+
+.separator-table {
+  border: 0;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.separator {
+  width: 100%;
+  height: 25px;
+  border: none;
+  background-color: #606060;
+}
+
+.main-table {
+  border: 0;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.form-container {
+  width: 96%;
+}
+
+.logout-table {
+  border: 0;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.breadcrumb {
+  width: 50%;
+}
+
+.rightAlign {
+  width: 50%;
+  text-align: right;
+}
+
+.info-table {
+  border: 0;
+  width: 99%;
+  border-collapse: collapse;
+}
+
+.info-inner-table {
+  border: 0;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.blueDashTable {
+  width: 100%;
+}
+
+.data-table {
+  width: 95%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.date-header {
+  font-size: 14px;
+}
+
+.table-title {
+  text-align: center;
+  font-size: 16px;
+}
+
+.table-header {
+  text-align: center;
+}
+
+.table-cell {
+  text-align: center;
+}
+
+.footer-table {
+  border: 0;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.footer {
+  background-color: #606060;
+  height: 40px;
+  color: white;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.welcome-text {
+  float: left;
+}
+
+.footer-status {
+  color: white;
+}
+
+.date-time {
+  float: right;
+  text-align: right;
+  color: white;
+}
+
+.link {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.required {
+  font-size: 12px;
+  color: red;
+}
